@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.result {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  &-tryAgainBtn {
+    @include btnFormatter($primary-color, $light-color);
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: translateY(-5px);
+    }
+  }
+}

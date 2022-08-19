@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.error {
+  img {
+    width: 600px;
+    max-width: 80vw;
+    margin: 50px auto;
+    display: block;
+  }
+
+  button {
+    @include btnFormatter($primary-color, $light-color);
+    display: block;
+    margin: auto;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

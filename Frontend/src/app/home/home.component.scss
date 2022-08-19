@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+  }
+  &-title {
+    font-size: 4rem;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  &-nameInput {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+  &-validationMsg {
+    color: $alert-color;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  &-startBtn {
+    @include btnFormatter($primary-color, $light-color);
+    display: block;
+    margin: 20px auto;
+
+  }
+}

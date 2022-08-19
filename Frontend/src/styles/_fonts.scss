@@ -1,0 +1,62 @@
+//Arabic font
+
+@font-face {
+    font-family: 'Markazi';
+    src: url('../assets/fonts/Markazi/MarkaziText-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Markazi/MarkaziText-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Markazi';
+    src: url('../assets/fonts/Markazi/MarkaziText-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Markazi/MarkaziText-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Markazi';
+    src: url('../assets/fonts/Markazi/MarkaziText-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Markazi/MarkaziText-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Markazi';
+    src: url('../assets/fonts/Markazi/MarkaziText-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Markazi/MarkaziText-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+
+
+//English font
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Light.woff2') format('woff2'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+}
+

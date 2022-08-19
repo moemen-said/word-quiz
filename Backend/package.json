@@ -1,0 +1,26 @@
+{
+  "name": "word-quiz",
+  "version": "1.0.0",
+  "description": "Backend for word quiz task for Twerlo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./dist/server.js"
+  },
+  "author": "moemen-said",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "helmet": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.0",
+    "@types/validator": "^13.7.4"
+  }
+}

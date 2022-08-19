@@ -1,0 +1,69 @@
+<div class="container quiz">
+  <div class="row">
+    <div class="col-12">
+      <h4 class="fw-semibold">
+        Welcome <span>{{ username | uppercase}}</span>
+      </h4>
+      <div class="quiz-progress">
+        <h5 class="mb-1">progress</h5>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            aria-label="Example with label"
+            [style.width]="progress + '%'"
+          >
+            {{ progress }}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <h1 class="quiz-word animate__animated animate__fadeIn">{{currentWord.word}}</h1>
+    </div>
+    <div class="col-12">
+      <div class="quiz-btnsDiv" #answerBtnsDiv>
+        <button
+          class="animate__animated"
+          (click)="validateAnswer($event, 'noun')"
+        >
+          Noun
+        </button>
+        <button
+          class="animate__animated"
+          (click)="validateAnswer($event, 'verb')"
+        >
+          Verb
+        </button>
+        <button
+          class="animate__animated"
+          (click)="validateAnswer($event, 'adjective')"
+        >
+          Adjective
+        </button>
+        <button
+          class="animate__animated"
+          (click)="validateAnswer($event, 'adverb')"
+        >
+          Adverb
+        </button>
+      </div>
+    </div>
+    <div class="col-12">
+      <h3
+        id="correctAlert"
+        class="quiz-feedback d-none success animate__animated animate__fadeIn"
+        #correctAlert
+      >
+        Correct
+      </h3>
+      <h3
+        id="uncorrectAlert"
+        class="quiz-feedback d-none fail animate__animated animate__fadeIn"
+        #unCorrectAlert
+      >
+        Uncorrect
+      </h3>
+    </div>
+  </div>
+</div>

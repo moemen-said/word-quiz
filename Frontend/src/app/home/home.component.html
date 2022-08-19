@@ -1,0 +1,24 @@
+<div class="container home animate__animated animate__fadeIn">
+  <div class="row">
+    <div class="col-12">
+      <img alt="logo" src="../../assets/logo.png" class="home-logo" />
+      <h1 class="home-title">Word Quiz</h1>
+    </div>
+    <div class="col-12">
+      <input
+        type="text"
+        class="form-control home-nameInput"
+        placeholder="name"
+        #username
+        required
+        (keyup)="onKeyUp($event)"
+      />
+      <p class="d-none home-validationMsg animate__animated animate__headShake" #warning>
+        Please enter your name
+      </p>
+    </div>
+    <div class="col-12">
+      <button class="home-startBtn" (click)="onStartBtnClick()">Start</button>
+    </div>
+  </div>
+</div>

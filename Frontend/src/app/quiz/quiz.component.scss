@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.quiz {
+	padding-top: 20px;
+
+	button {
+        @include btnFormatter($primary-color, $light-color);
+	}
+
+	&-progress {
+		.progress {
+			background-color: $secondary-color;
+			height: 30px;
+			div {
+				background-color: $primary-color;
+				font-size: 1rem;
+			}
+		}
+	}
+	&-word {
+		color: $dark-color;
+		font-size: 4rem;
+		height: 4rem;
+		text-align: center;
+		margin: 100px auto;
+	}
+	&-btnsDiv {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 20px;
+
+		button {
+			background-color: $primary-color;
+			color: $light-color;
+
+			&:hover {
+				background-color: darken($color: $primary-color, $amount: 10);
+			}
+			&:active {
+				background-color: darken($color: $primary-color, $amount: 20);
+			}
+			&:disabled {
+				background-color: #aaa;
+				color: #fff;
+				cursor: not-allowed;
+			}
+			&.correct,
+			&.correct:disabled {
+				color: $light-color;
+				background-color: $success-color !important;
+			}
+			&.uncorrect,
+			&.uncorrect:disabled {
+				color: $light-color;
+				background-color: $alert-color !important;
+			}
+		}
+	}
+	&-feedback {
+		text-align: center;
+		margin: 40px auto;
+
+		&.success {
+			color: $success-color;
+		}
+		&.fail {
+			color: $alert-color;
+		}
+	}
+}
+@media (max-width: 567px) {
+	.quiz {
+		&-btnsDiv {
+			button {
+				margin: 10px;
+				width: calc(50% - 20px);
+			}
+		}
+	}
+}
